@@ -8,7 +8,7 @@ pipeline{
                    """    
             }
         }
-    stage("Deploy"){
+        stage("Deploy Upadte"){
             steps{
                 sh """
                        echo "Welcome to the Deploynent. Added Jenkins"
@@ -17,7 +17,7 @@ pipeline{
                        cd /var/www
                        sudo rm -rf html
                        git clone https://github.com/syjjem/jenk.git html
-                   """    r
+                   """    
             }
         }
     }
